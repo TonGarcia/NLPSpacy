@@ -12,6 +12,21 @@ Principais Libs utilizadas:
     *Report: [PandasProfilling](pip install https://github.com/pandas-profiling/pandas-p
 rofiling/archive/master.zip)
 
+# WHERE STOPED: 
+https://spacy.io/usage/spacy-101
+
+__Instalar o pacote de modelo do idioma português no Spacy (PIP)__: 
+```shell
+    pip install https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.0.0a0/pt_core_news_sm-3.0.0a0.tar.gz
+    pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.0.0a0/en_core_web_trf-3.0.0a0.tar.gz
+``` 
+
+___Usando o modelo__:
+```python
+    import spacy
+    nlp = spacy.load("pt_core_news_sm")
+```
+
 1º Teste:
 - Todos municípios de __uma UF__ (a que tiver mais municípios com dados no Dataset)
 - __Um medicamento__ (o que representar maior valor absoluto em R$)
